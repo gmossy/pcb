@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -6441,7 +6441,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <parts>
 <part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-LETTER" device=""/>
 <part name="U1" library="SparkFun-IC-Microcontroller" deviceset="ATMEGA328P_PDIP" device="" value="328P"/>
-<part name="J1" library="SparkFun-Connectors" deviceset="6_PIN_SERIAL_TARGET" device="" value="FTDI FT232"/>
+<part name="J1" library="SparkFun-Connectors" deviceset="6_PIN_SERIAL_TARGET" device="" value="FTDI_FT232"/>
 <part name="U2" library="SparkFun-IC-Power" deviceset="V_REG_78XX" device="-TO-220" value="LM7805CT"/>
 <part name="C1" library="SparkFun-Capacitors" deviceset="10UF-POLAR" device="-RADIAL-2.5MM-25V-20%" value="10uF"/>
 <part name="C2" library="SparkFun-Capacitors" deviceset="10UF-POLAR" device="-RADIAL-2.5MM-25V-20%" value="10uF"/>
@@ -6458,10 +6458,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C7" library="SparkFun-Capacitors" deviceset="10UF-POLAR" device="-RADIAL-2.5MM-25V-20%" value="10uF"/>
 <part name="D2" library="SparkFun-LED" deviceset="LED" device="5MM" value="RED"/>
 <part name="R3" library="SparkFun-Resistors" deviceset="1KOHM" device="-HORIZ-1/4W-5%" value="220"/>
-<part name="J3" library="SparkFun-Connectors" deviceset="CONN_06" device="SILK_FEMALE_PTH" value="ANALOG IN"/>
+<part name="J3" library="SparkFun-Connectors" deviceset="CONN_06" device="SILK_FEMALE_PTH" value="ANALOG_IN"/>
 <part name="J4" library="SparkFun-Connectors" deviceset="CONN_06" device="SILK_FEMALE_PTH" value="POWER"/>
-<part name="J5" library="SparkFun-Connectors" deviceset="CONN_08" device="&quot;" value="DIGITAL (PWM)"/>
-<part name="J6" library="SparkFun-Connectors" deviceset="CONN_07" device="" value="DIGITAL (PWM)"/>
+<part name="J5" library="SparkFun-Connectors" deviceset="CONN_08" device="&quot;" value="DIGITAL(PWM)"/>
+<part name="J6" library="SparkFun-Connectors" deviceset="CONN_07" device="" value="DIGITAL(PWM)"/>
 <part name="D3" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="-PTH" value="1A/50V/1.1V"/>
 <part name="S2" library="SparkFun-Switches" deviceset="SWITCH-SPDT" device="-PTH-11.6X4.0MM" value="SPDT"/>
 <part name="J7" library="SparkFun-Connectors" deviceset="POWER_JACK" device=""/>
@@ -6502,7 +6502,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="J4" gate="G$1" x="109.22" y="99.06"/>
 <instance part="J5" gate="G$1" x="228.6" y="88.9" rot="R180"/>
 <instance part="J6" gate="G$1" x="228.6" y="68.58" rot="R180"/>
-<instance part="D3" gate="G$1" x="20.32" y="109.22" rot="R90"/>
+<instance part="D3" gate="G$1" x="27.94" y="109.22" rot="R90"/>
 <instance part="S2" gate="1" x="20.32" y="116.84" rot="R90"/>
 <instance part="J7" gate="G$1" x="20.32" y="88.9"/>
 </instances>
@@ -6952,13 +6952,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="213.36" y="96.52" size="1.778" layer="95" font="vector"/>
 </segment>
 </net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="S2" gate="1" pin="P"/>
-<pinref part="D3" gate="G$1" pin="C"/>
-<wire x1="20.32" y1="114.3" x2="20.32" y2="111.76" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="GNDBREAK" class="0">
 <segment>
 <pinref part="J7" gate="G$1" pin="GNDBREAK"/>
@@ -6972,9 +6965,15 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="22.86" y1="96.52" x2="27.94" y2="96.52" width="0.1524" layer="91"/>
 <label x="22.86" y="96.52" size="1.778" layer="95"/>
 <pinref part="D3" gate="G$1" pin="A"/>
-<wire x1="20.32" y1="106.68" x2="20.32" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="104.14" x2="27.94" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="104.14" x2="27.94" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="106.68" x2="27.94" y2="96.52" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="S2" gate="1" pin="P"/>
+<pinref part="D3" gate="G$1" pin="C"/>
+<wire x1="20.32" y1="114.3" x2="27.94" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="114.3" x2="27.94" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -6983,6 +6982,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <errors>
 <approved hash="106,1,142.24,104.14,AREF,,,,,"/>
 <approved hash="106,1,66.04,53.34,CTS,,,,,"/>
+<approved hash="106,1,22.86,93.98,GNDBREAK,,,,,"/>
 </errors>
 </schematic>
 </drawing>
