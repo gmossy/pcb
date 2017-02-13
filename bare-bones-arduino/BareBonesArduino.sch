@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -6435,7 +6435,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0" drill="0">
+<class number="0" name="default" width="0.254" drill="0">
+<clearance class="0" value="0.254"/>
+</class>
+<class number="1" name="power" width="0.3048" drill="0">
+<clearance class="1" value="0.254"/>
 </class>
 </classes>
 <parts>
@@ -6509,7 +6513,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <busses>
 </busses>
 <nets>
-<net name="VIN" class="0">
+<net name="VIN" class="1">
 <segment>
 <pinref part="U2" gate="G$1" pin="IN"/>
 <wire x1="22.86" y1="124.46" x2="33.02" y2="124.46" width="0.1524" layer="91"/>
@@ -6856,7 +6860,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="68.58" y="53.34" size="1.778" layer="95" font="vector"/>
 </segment>
 </net>
-<net name="VCC" class="0">
+<net name="VCC" class="1">
 <segment>
 <pinref part="U1" gate="G$1" pin="VCC"/>
 <wire x1="142.24" y1="111.76" x2="129.54" y2="111.76" width="0.1524" layer="91"/>
@@ -6916,7 +6920,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="C5" gate="G$1" pin="+"/>
 </segment>
 </net>
-<net name="3.3V" class="0">
+<net name="3.3V" class="1">
 <segment>
 <pinref part="C7" gate="G$1" pin="+"/>
 <pinref part="U3" gate="G$1" pin="OUT"/>
@@ -6959,7 +6963,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="22.86" y="93.98" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="PWR" class="0">
+<net name="PWR" class="1">
 <segment>
 <pinref part="J7" gate="G$1" pin="PWR"/>
 <wire x1="22.86" y1="96.52" x2="27.94" y2="96.52" width="0.1524" layer="91"/>
@@ -6968,7 +6972,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="27.94" y1="106.68" x2="27.94" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="N$2" class="1">
 <segment>
 <pinref part="S2" gate="1" pin="P"/>
 <pinref part="D3" gate="G$1" pin="C"/>
