@@ -303,8 +303,8 @@
 <text x="113.157" y="76.835" size="1.27" layer="21" font="vector" ratio="10" align="center">O</text>
 <text x="110.617" y="76.835" size="1.27" layer="21" font="vector" ratio="10" align="center">-</text>
 <text x="78.74" y="82.55" size="1.27" layer="21" font="vector" align="top-center">220</text>
-<text x="93.98" y="30.48" size="1.27" layer="21" font="vector" align="top-center">300</text>
-<text x="113.03" y="30.48" size="1.27" layer="21" font="vector" align="top-center">300</text>
+<text x="93.98" y="30.48" size="1.27" layer="21" font="vector" align="top-center">220</text>
+<text x="113.03" y="30.48" size="1.27" layer="21" font="vector" align="top-center">220</text>
 <text x="93.98" y="21.59" size="1.27" layer="21" font="vector" rot="R180" align="top-center">10k</text>
 <text x="113.03" y="17.78" size="1.27" layer="21" font="vector" rot="R180" align="top-center">10k</text>
 </plain>
@@ -951,7 +951,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <param name="Efforts" value="2"/>
 <param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
-<param name="PrefDir.1" value="a"/>
+<param name="PrefDir.1" value="*"/>
 <param name="PrefDir.2" value="0"/>
 <param name="PrefDir.3" value="0"/>
 <param name="PrefDir.4" value="0"/>
@@ -966,7 +966,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <param name="PrefDir.13" value="0"/>
 <param name="PrefDir.14" value="0"/>
 <param name="PrefDir.15" value="0"/>
-<param name="PrefDir.16" value="a"/>
+<param name="PrefDir.16" value="-"/>
 <param name="cfVia" value="8"/>
 <param name="cfNonPref" value="5"/>
 <param name="cfChangeDir" value="2"/>
@@ -1047,8 +1047,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="C2" library="SparkFun-Capacitors" package="CAP-PTH-SMALL-KIT" value="0.33uF" x="116.84" y="63.5">
 <attribute name="PROD_ID" value="CAP-08370" x="116.84" y="63.5" size="1.778" layer="27" display="off"/>
 </element>
-<element name="D1" library="SparkFun-LED" package="LED_5MM" value="YELLOW" x="93.98" y="38.1"/>
-<element name="D2" library="SparkFun-LED" package="LED_5MM" value="RED" x="113.03" y="38.1"/>
+<element name="D1" library="SparkFun-LED" package="LED_5MM" value="RED" x="93.98" y="38.1"/>
+<element name="D2" library="SparkFun-LED" package="LED_5MM" value="YELLOW" x="113.03" y="38.1"/>
 <element name="FRAME1" library="SparkFun-Aesthetics" package="CREATIVE_COMMONS" value="FRAME-LETTER" x="30.48" y="-8.89"/>
 <element name="J2-J4" library="SparkFun-Connectors" package="2X10" value="TM4C123GXL" x="48.26" y="66.04" rot="R270"/>
 <element name="J3-J1" library="SparkFun-Connectors" package="2X10" value="TM4C123GXL" x="7.62" y="43.18" rot="R90"/>
@@ -1077,10 +1077,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="R2" library="SparkFun-Resistors" package="AXIAL-0.3" value="10k" x="93.98" y="20.32" rot="R180">
 <attribute name="PROD_ID" value="RES-09435" x="93.98" y="20.32" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="R3" library="SparkFun-Resistors" package="AXIAL-0.3" value="300" x="93.98" y="27.94" rot="R180">
+<element name="R3" library="SparkFun-Resistors" package="AXIAL-0.3" value="220" x="93.98" y="27.94" rot="R180">
 <attribute name="PROD_ID" value="RES-08380" x="93.98" y="27.94" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="R4" library="SparkFun-Resistors" package="AXIAL-0.3" value="300" x="113.03" y="27.94" rot="R180">
+<element name="R4" library="SparkFun-Resistors" package="AXIAL-0.3" value="220" x="113.03" y="27.94" rot="R180">
 <attribute name="PROD_ID" value="RES-08380" x="113.03" y="27.94" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R5" library="SparkFun-Resistors" package="AXIAL-0.3" value="220" x="78.74" y="80.01" rot="R180">

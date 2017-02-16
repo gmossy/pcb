@@ -4230,12 +4230,12 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <part name="J6" library="SparkFun-Connectors" deviceset="CONN_08" device="&quot;" value="Nokia_5110"/>
 <part name="LS1" library="SparkFun-Electromechanical" deviceset="BUZZER" device="-PTH" value="BUZZER"/>
 <part name="VR1" library="SparkFun-Resistors" deviceset="POTENTIOMETER_SLIDE" device="-30MM-1/10W-20%" value="10k"/>
-<part name="D1" library="SparkFun-LED" deviceset="LED" device="5MM" value="YELLOW"/>
-<part name="D2" library="SparkFun-LED" deviceset="LED" device="5MM" value="RED"/>
+<part name="D1" library="SparkFun-LED" deviceset="LED" device="5MM" value="RED"/>
+<part name="D2" library="SparkFun-LED" deviceset="LED" device="5MM" value="YELLOW"/>
 <part name="R1" library="SparkFun-Resistors" deviceset="10KOHM" device="-HORIZ-1/4W-5%" value="10k"/>
 <part name="R2" library="SparkFun-Resistors" deviceset="10KOHM" device="-HORIZ-1/4W-5%" value="10k"/>
-<part name="R3" library="SparkFun-Resistors" deviceset="1KOHM" device="-HORIZ-1/4W-5%" value="300"/>
-<part name="R4" library="SparkFun-Resistors" deviceset="1KOHM" device="-HORIZ-1/4W-5%" value="300"/>
+<part name="R3" library="SparkFun-Resistors" deviceset="1KOHM" device="-HORIZ-1/4W-5%" value="220"/>
+<part name="R4" library="SparkFun-Resistors" deviceset="1KOHM" device="-HORIZ-1/4W-5%" value="220"/>
 <part name="R5" library="SparkFun-Resistors" deviceset="1KOHM" device="-HORIZ-1/4W-5%" value="220"/>
 <part name="R6" library="SparkFun-Resistors" deviceset="1KOHM" device="-HORIZ-1/4W-5%" value="1.5k"/>
 <part name="R7" library="SparkFun-Resistors" deviceset="1KOHM" device="-HORIZ-1/4W-5%" value="1.5k"/>
@@ -4255,7 +4255,7 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <sheet>
 <plain>
 <text x="172.72" y="12.7" size="3.048" layer="94" font="vector" align="center-left">Phi Luu</text>
-<text x="238.76" y="7.62" size="3.048" layer="94" font="vector" align="center-left">2.0</text>
+<text x="238.76" y="7.62" size="3.048" layer="94" font="vector" align="center-left">2.1</text>
 <text x="106.68" y="148.844" size="1.778" layer="96" font="vector" rot="R90">PB0</text>
 <text x="104.14" y="148.844" size="1.778" layer="96" font="vector" rot="R90">PB1</text>
 <text x="106.68" y="113.284" size="1.778" layer="96" font="vector" rot="R90">PB3</text>
