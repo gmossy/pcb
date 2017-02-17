@@ -4257,7 +4257,7 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <sheet>
 <plain>
 <text x="172.72" y="12.7" size="3.048" layer="94" font="vector" align="center-left">Phi Luu</text>
-<text x="238.76" y="7.62" size="3.048" layer="94" font="vector" align="center-left">2.0</text>
+<text x="238.76" y="7.62" size="3.048" layer="94" font="vector" align="center-left">3.0</text>
 <text x="106.68" y="148.844" size="1.778" layer="96" font="vector" rot="R90">PB0</text>
 <text x="104.14" y="148.844" size="1.778" layer="96" font="vector" rot="R90">PB1</text>
 <text x="106.68" y="113.284" size="1.778" layer="96" font="vector" rot="R90">PB3</text>
