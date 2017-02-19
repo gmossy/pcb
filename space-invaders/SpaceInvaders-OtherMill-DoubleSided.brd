@@ -1145,11 +1145,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="62.23" y1="25.4" x2="68.58" y2="21.59" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DAC_OUT">
-<contactref element="R6" pad="P$2"/>
-<contactref element="R8" pad="P$2"/>
 <contactref element="R9" pad="P$2"/>
 <contactref element="R10" pad="P$2"/>
 <contactref element="R11" pad="P$2"/>
+<contactref element="R6" pad="P$2"/>
+<contactref element="R8" pad="P$2"/>
 <contactref element="LS1" pad="+"/>
 <wire x1="25.4" y1="30.48" x2="45.01" y2="20.32" width="0" layer="19" extent="1-1"/>
 <wire x1="13.97" y1="35.56" x2="25.4" y2="30.48" width="0" layer="19" extent="1-1"/>
@@ -1228,14 +1228,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </signal>
 <signal name="DAC">
 <contactref element="R6" pad="P$1"/>
-<contactref element="R7" pad="P$1"/>
-<contactref element="R9" pad="P$1"/>
-<contactref element="R10" pad="P$1"/>
-<contactref element="R11" pad="P$1"/>
 <contactref element="J2-J4" pad="5"/>
 <contactref element="J2-J4" pad="4"/>
 <contactref element="J3-J1" pad="14"/>
 <contactref element="J3-J1" pad="16"/>
+<contactref element="R7" pad="P$1"/>
+<contactref element="R9" pad="P$1"/>
+<contactref element="R11" pad="P$1"/>
+<contactref element="R10" pad="P$1"/>
 <wire x1="48.26" y1="58.42" x2="50.8" y2="60.96" width="0" layer="19" extent="1-1"/>
 <wire x1="5.08" y1="58.42" x2="48.26" y2="58.42" width="0" layer="19" extent="1-1"/>
 <wire x1="5.08" y1="55.88" x2="5.08" y2="58.42" width="0" layer="19" extent="1-1"/>
@@ -1352,7 +1352,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="84.3788" y1="5.3594" x2="91.44" y2="15.24" width="0" layer="19" extent="1-1"/>
 <wire x1="7.62" y1="48.26" x2="84.3788" y2="5.3594" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="PB2">
+<signal name="PE0">
 <contactref element="R2" pad="P$2"/>
 <contactref element="J2-J4" pad="6"/>
 <contactref element="S2" pad="3"/>
