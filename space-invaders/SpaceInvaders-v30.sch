@@ -4257,7 +4257,7 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <sheet>
 <plain>
 <text x="172.72" y="12.7" size="3.048" layer="94" font="vector" align="center-left">Phi Luu</text>
-<text x="238.76" y="7.62" size="3.048" layer="94" font="vector" align="center-left">2.1</text>
+<text x="238.76" y="7.62" size="3.048" layer="94" font="vector" align="center-left">3.0</text>
 <text x="134.62" y="147.32" size="1.778" layer="96" font="vector" rot="R90">PB0</text>
 <text x="132.08" y="147.32" size="1.778" layer="96" font="vector" rot="R90">PB1</text>
 <text x="134.62" y="111.76" size="1.778" layer="96" font="vector" rot="R90">PB3</text>
@@ -4823,12 +4823,12 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <approved hash="106,1,137.16,111.76,PF3,,,,,"/>
 <approved hash="106,1,116.84,111.76,PF4,,,,,"/>
 <approved hash="106,1,129.54,96.52,RESET,,,,,"/>
-<approved hash="115,1,22.86,96.52,PA6,,,,,"/>
-<approved hash="115,1,27.94,142.24,PA2,,,,,"/>
-<approved hash="115,1,20.32,96.52,PA7,,,,,"/>
 <approved hash="115,1,31.75,35.56,3.3V,,,,,"/>
 <approved hash="115,1,25.4,96.52,PA5,,,,,"/>
+<approved hash="115,1,20.32,96.52,PA7,,,,,"/>
 <approved hash="115,1,17.78,142.24,PA3,,,,,"/>
+<approved hash="115,1,27.94,142.24,PA2,,,,,"/>
+<approved hash="115,1,22.86,96.52,PA6,,,,,"/>
 </errors>
 </schematic>
 </drawing>
