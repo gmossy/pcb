@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.0.1">
+<eagle version="8.0.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -804,6 +804,20 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="0" y="3.302" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
 <text x="0" y="-3.175" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
 </package>
+<package name="SWITCH_SPDT_PTH_11.6X4.0MM">
+<description>&lt;h3&gt;SPDT PTH Slide Switch&lt;/h3&gt;
+&lt;p&gt;Single-pole, double-throw (SPDT) switch.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.sparkfun.com/datasheets/Components/Buttons/P040040c.pdf"&gt;Dimensional Drawing&lt;/a&gt;&lt;/p&gt;</description>
+<wire x1="2.175" y1="5.815" x2="-2.175" y2="5.815" width="0.2032" layer="21"/>
+<wire x1="-2.175" y1="5.815" x2="-2.175" y2="-5.815" width="0.2032" layer="21"/>
+<wire x1="-2.175" y1="-5.815" x2="2.175" y2="-5.815" width="0.2032" layer="21"/>
+<wire x1="2.175" y1="-5.815" x2="2.175" y2="5.815" width="0.2032" layer="21"/>
+<pad name="1" x="0" y="2.54" drill="1.016" diameter="1.8796"/>
+<pad name="2" x="0" y="0" drill="1.016" diameter="1.8796"/>
+<pad name="3" x="0" y="-2.54" drill="1.016" diameter="1.8796"/>
+<text x="-2.413" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;Name</text>
+<text x="2.413" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center">&gt;Value</text>
+</package>
 </packages>
 </library>
 <library name="SparkFun-IC-Power">
@@ -1066,8 +1080,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="PROD_ID" value="BATT-10855" x="58.42" y="26.67" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
 <element name="LS1" library="SparkFun-Electromechanical" package="BUZZER-12MM" value="BUZZER" x="33.02" y="20.32" rot="R180">
-<attribute name="SF_SKU" value="COM-07950" x="33.02" y="20.32" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="PROD_ID" value="COMP-08253" x="33.02" y="20.32" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SF_SKU" value="COM-07950" x="33.02" y="20.32" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R1" library="SparkFun-Resistors" package="AXIAL-0.3" value="10k" x="83.82" y="15.24">
 <attribute name="PROD_ID" value="RES-09435" x="83.82" y="15.24" size="1.778" layer="27" display="off"/>
@@ -1103,20 +1117,24 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="PROD_ID" value="RES-08380" x="11.43" y="22.86" size="1.778" layer="27" display="off"/>
 </element>
 <element name="S1" library="SparkFun-Switches" package="TACTILE_SWITCH_PTH_6.0MM" value="SPECIAL" x="83.82" y="7.62">
-<attribute name="SF_SKU" value="COM-00097" x="83.82" y="7.62" size="1.778" layer="27" display="off"/>
 <attribute name="PROD_ID" value=" SWCH-08441" x="83.82" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="SF_SKU" value="COM-00097" x="83.82" y="7.62" size="1.778" layer="27" display="off"/>
 </element>
 <element name="S2" library="SparkFun-Switches" package="TACTILE_SWITCH_PTH_6.0MM" value="REGULAR" x="67.31" y="7.62">
-<attribute name="SF_SKU" value="COM-00097" x="67.31" y="7.62" size="1.778" layer="27" display="off"/>
 <attribute name="PROD_ID" value=" SWCH-08441" x="67.31" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="SF_SKU" value="COM-00097" x="67.31" y="7.62" size="1.778" layer="27" display="off"/>
 </element>
 <element name="U1" library="SparkFun-IC-Power" package="TO-220-ALT" value="LM7805CT" x="76.2" y="59.69">
-<attribute name="SF_ID" value="COM-00107" x="76.2" y="59.69" size="1.778" layer="27" display="off"/>
 <attribute name="PROD_ID" value="VREG-08450" x="76.2" y="59.69" size="1.778" layer="27" display="off"/>
+<attribute name="SF_ID" value="COM-00107" x="76.2" y="59.69" size="1.778" layer="27" display="off"/>
 </element>
 <element name="VR1" library="SparkFun-Resistors" package="SLIDER-MEDIUM" value="10k" x="25.4" y="7.62" rot="R180">
-<attribute name="SF_SKU" value="COM-11621" x="25.4" y="7.62" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="PROD_ID" value="RES-11931" x="25.4" y="7.62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SF_SKU" value="COM-11621" x="25.4" y="7.62" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="S3" library="SparkFun-Switches" package="SWITCH_SPDT_PTH_11.6X4.0MM" value="POWER_SWITCH" x="73.66" y="86.36" rot="R90">
+<attribute name="PROD_ID" value="SWCH-08261" x="73.66" y="86.36" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="SF_SKU" value="COM-00102" x="73.66" y="86.36" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 </elements>
 <signals>
@@ -1178,12 +1196,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <signal name="9V" class="1">
 <contactref element="U1" pad="IN"/>
 <contactref element="C2" pad="1"/>
-<contactref element="J7" pad="V+"/>
-<wire x1="79.756" y1="79.756" x2="79.756" y2="65.786" width="0.3048" layer="1"/>
-<wire x1="79.756" y1="65.786" x2="73.66" y2="59.69" width="0.3048" layer="1"/>
-<wire x1="73.66" y1="55.88" x2="73.66" y2="59.69" width="0.3048" layer="1"/>
 <wire x1="72.263" y1="49.53" x2="72.263" y2="54.483" width="0.3048" layer="1"/>
-<wire x1="72.263" y1="54.483" x2="73.66" y2="55.88" width="0.3048" layer="1"/>
+<wire x1="73.66" y1="55.88" x2="72.263" y2="54.483" width="0.3048" layer="1"/>
+<contactref element="S3" pad="3"/>
+<wire x1="76.2" y1="86.36" x2="78.74" y2="86.36" width="0.3048" layer="1"/>
+<wire x1="78.74" y1="86.36" x2="82.55" y2="82.55" width="0.3048" layer="1"/>
+<wire x1="82.55" y1="82.55" x2="82.55" y2="68.58" width="0.3048" layer="1"/>
+<wire x1="82.55" y1="68.58" x2="73.66" y2="59.69" width="0.3048" layer="1"/>
+<wire x1="73.66" y1="59.69" x2="73.66" y2="55.88" width="0.3048" layer="1"/>
 </signal>
 <signal name="GND" airwireshidden="yes">
 <contactref element="U1" pad="GND"/>
@@ -1200,13 +1220,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <contactref element="R1" pad="P$1"/>
 <contactref element="R2" pad="P$1"/>
 <contactref element="J5" pad="2"/>
-<wire x1="66.802" y1="79.756" x2="66.802" y2="80.772" width="0.254" layer="1"/>
-<wire x1="66.802" y1="80.772" x2="68.58" y2="82.55" width="0.254" layer="1"/>
-<wire x1="68.58" y1="82.55" x2="81.28" y2="82.55" width="0.254" layer="1"/>
-<wire x1="81.28" y1="82.55" x2="82.55" y2="81.28" width="0.254" layer="1"/>
-<wire x1="82.55" y1="81.28" x2="82.55" y2="66.04" width="0.254" layer="1"/>
-<wire x1="82.55" y1="66.04" x2="76.2" y2="59.69" width="0.254" layer="1"/>
-<wire x1="76.2" y1="55.88" x2="76.2" y2="59.69" width="0.254" layer="1"/>
 <wire x1="81.153" y1="49.53" x2="80.01" y2="49.53" width="0.254" layer="1"/>
 <wire x1="76.2" y1="53.34" x2="80.01" y2="49.53" width="0.254" layer="1"/>
 <wire x1="76.2" y1="53.34" x2="76.2" y2="55.88" width="0.254" layer="1"/>
@@ -1233,7 +1246,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="36.27" y1="26.11" x2="39.37" y2="29.21" width="0.254" layer="1"/>
 <wire x1="39.37" y1="29.21" x2="39.37" y2="31.75" width="0.254" layer="1"/>
 <wire x1="36.27" y1="20.32" x2="36.27" y2="26.11" width="0.254" layer="1"/>
-<wire x1="39.37" y1="31.75" x2="46.99" y2="58.42" width="0" layer="19" extent="16-16"/>
+<wire x1="66.802" y1="79.756" x2="66.802" y2="48.768" width="0.254" layer="1"/>
+<wire x1="66.802" y1="48.768" x2="69.85" y2="45.72" width="0.254" layer="1"/>
+<wire x1="69.85" y1="45.72" x2="77.343" y2="45.72" width="0.254" layer="1"/>
+<wire x1="77.343" y1="45.72" x2="81.153" y2="49.53" width="0.254" layer="1"/>
+<wire x1="77.47" y1="20.32" x2="77.343" y2="45.72" width="0" layer="19" extent="1-1"/>
 <wire x1="6.35" y1="60.96" x2="39.37" y2="66.04" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="VBUS" class="1">
@@ -1343,7 +1360,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="63.5" y1="48.26" x2="53.34" y2="58.42" width="0.254" layer="16"/>
 <wire x1="53.34" y1="58.42" x2="52.07" y2="58.42" width="0.254" layer="16"/>
 </signal>
-<signal name="LED" airwireshidden="yes">
+<signal name="LED">
 <contactref element="R5" pad="P$1"/>
 <contactref element="J5" pad="8"/>
 <contactref element="J6" pad="8"/>
@@ -1492,6 +1509,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="1.27" y1="5.08" x2="3.81" y2="2.54" width="0.254" layer="1"/>
 <wire x1="3.81" y1="2.54" x2="61.2394" y2="2.54" width="0.254" layer="1"/>
 <wire x1="61.2394" y1="2.54" x2="64.0588" y2="5.3594" width="0.254" layer="1"/>
+</signal>
+<signal name="VIN" class="1">
+<contactref element="J7" pad="V+"/>
+<contactref element="S3" pad="2"/>
+<wire x1="79.756" y1="79.756" x2="77.724" y2="79.756" width="0.3048" layer="1"/>
+<wire x1="77.724" y1="79.756" x2="73.66" y2="83.82" width="0.3048" layer="1"/>
+<wire x1="73.66" y1="83.82" x2="73.66" y2="86.36" width="0.3048" layer="1"/>
 </signal>
 </signals>
 <errors>
@@ -1783,42 +1807,42 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <approved hash="5,16,d6be497657c431e2"/>
 <approved hash="5,16,289c72303e83a4c1"/>
 <approved hash="5,16,2ebdb081ff3398e1"/>
-<approved hash="5,1,9877411f28490be0"/>
-<approved hash="5,1,13bfa9ae1a995761"/>
 <approved hash="5,1,e70b270d4e6b74ac"/>
-<approved hash="5,1,e7731b2a722074b8"/>
-<approved hash="5,1,2d89f6e74e625577"/>
 <approved hash="5,1,e77732bc5b16741c"/>
 <approved hash="5,1,155fc3787b4f5541"/>
+<approved hash="5,1,9877411f28490be0"/>
+<approved hash="5,1,13bfa9ae1a995761"/>
+<approved hash="5,1,e7731b2a722074b8"/>
+<approved hash="5,1,2d89f6e74e625577"/>
 <approved hash="5,1,e47703206a7277e4"/>
 <approved hash="5,1,e752f4b09d077424"/>
 <approved hash="5,1,119613edad2b5749"/>
-<approved hash="5,1,e776dd26b4117480"/>
-<approved hash="5,1,13bc3fcc8afc56a3"/>
 <approved hash="5,1,e7570c03657574e0"/>
 <approved hash="5,1,13b7f9c244f556a9"/>
-<approved hash="5,1,e77ae94f805c74a8"/>
-<approved hash="5,1,118e0ce7b4615171"/>
-<approved hash="5,1,1d8ddd9567345733"/>
 <approved hash="5,1,13b5efa95890576b"/>
+<approved hash="5,1,e776dd26b4117480"/>
+<approved hash="5,1,13bc3fcc8afc56a3"/>
+<approved hash="5,1,e77ae94f805c74a8"/>
 <approved hash="5,1,1158197aa14e4947"/>
-<approved hash="5,1,947703146147d8dc"/>
-<approved hash="5,1,97570c376e40dbd8"/>
-<approved hash="5,1,9776dd12bf24dbb8"/>
-<approved hash="5,1,977ae97b8b69db90"/>
-<approved hash="5,1,9752f4849632db1c"/>
+<approved hash="5,1,1d8ddd9567345733"/>
+<approved hash="5,1,118e0ce7b4615171"/>
 <approved hash="5,1,97731b1e7915db80"/>
+<approved hash="5,1,97570c376e40dbd8"/>
 <approved hash="5,1,e877412b237ca4d8"/>
 <approved hash="5,1,977732885023db24"/>
 <approved hash="5,1,970b2739455edb94"/>
+<approved hash="5,1,947703146147d8dc"/>
+<approved hash="5,1,9752f4849632db1c"/>
+<approved hash="5,1,9776dd12bf24dbb8"/>
+<approved hash="5,1,977ae97b8b69db90"/>
 <approved hash="5,1,239c78801eb38541"/>
 <approved hash="5,1,25bdba31df03b961"/>
 <approved hash="5,1,17bd884dde7fb861"/>
 <approved hash="5,1,119c4afc1fcf8441"/>
 <approved hash="5,1,c9bc56596d6b0b60"/>
 <approved hash="5,1,cf9d94e8acdb3740"/>
-<approved hash="5,1,efbc705554673260"/>
 <approved hash="5,1,e99db2e495d70e40"/>
+<approved hash="5,1,efbc705554673260"/>
 <approved hash="5,1,15bd8a60e3528561"/>
 <approved hash="5,1,139c48d122e2b941"/>
 <approved hash="5,1,d47703ceb18148d8"/>
@@ -1826,34 +1850,36 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <approved hash="5,1,43964131ccf73649"/>
 <approved hash="5,1,d7570cedbe864bdc"/>
 <approved hash="5,1,41b5bd75394c366b"/>
-<approved hash="5,1,a87741f1f3ba34dc"/>
-<approved hash="5,1,d777325280e54b20"/>
-<approved hash="5,1,4f8d8f4906e83633"/>
-<approved hash="5,1,41bffb727b453661"/>
 <approved hash="5,1,d70b27e395984b90"/>
 <approved hash="5,1,d7731bc4a9d34b84"/>
 <approved hash="5,1,7f89a43b2fbe3477"/>
-<approved hash="5,1,475f91a41a933441"/>
-<approved hash="5,1,d776ddc86fe24bbc"/>
-<approved hash="5,1,41bc6d10eb2037a3"/>
-<approved hash="5,1,47bdd873d241b461"/>
-<approved hash="5,1,41b7ab1e252937a9"/>
-<approved hash="5,1,419c1ac213f18841"/>
+<approved hash="5,1,a87741f1f3ba34dc"/>
+<approved hash="5,1,41bffb727b453661"/>
+<approved hash="5,1,d777325280e54b20"/>
+<approved hash="5,1,4f8d8f4906e83633"/>
 <approved hash="5,1,d77ae9a15baf4b94"/>
-<approved hash="5,1,438e5e3bd5bd3071"/>
 <approved hash="5,1,43584ba6c0922847"/>
+<approved hash="5,1,475f91a41a933441"/>
+<approved hash="5,1,47bdd873d241b461"/>
+<approved hash="5,1,d776ddc86fe24bbc"/>
+<approved hash="5,1,438e5e3bd5bd3071"/>
+<approved hash="5,1,419c1ac213f18841"/>
+<approved hash="5,1,41bc6d10eb2037a3"/>
+<approved hash="5,1,41b7ab1e252937a9"/>
 <approved hash="5,1,e077023d2c92b1d8"/>
-<approved hash="5,1,e37733a11df6b220"/>
-<approved hash="5,1,e30b2610088bb290"/>
+<approved hash="5,1,e3570d1e2395b2dc"/>
 <approved hash="5,1,e37ae852c6bcb294"/>
 <approved hash="5,1,e376dc3bf2f1b2bc"/>
-<approved hash="5,1,e3570d1e2395b2dc"/>
+<approved hash="5,1,e37733a11df6b220"/>
+<approved hash="5,1,e30b2610088bb290"/>
 <approved hash="5,1,9c7740026ea9cddc"/>
 <approved hash="5,1,e3731a3734c0b284"/>
-<approved hash="5,1,179c4d3e010d9b41"/>
 <approved hash="5,1,11bd8f8fc0bda761"/>
+<approved hash="5,1,179c4d3e010d9b41"/>
 <approved hash="5,1,ff9c99e910588e42"/>
+<approved hash="5,1,0088a19333376a37"/>
 <approved hash="5,1,6b5a997cff0cf104"/>
+<approved hash="5,1,e88b499fca3b9334"/>
 <approved hash="5,1,5f9d398d983c0643"/>
 <approved hash="5,1,7b5a8989a679a884"/>
 <approved hash="5,16,e47703206a7277e4"/>
@@ -1890,43 +1916,45 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <approved hash="5,16,17bd884dde7fb861"/>
 <approved hash="5,16,cf9d94e8acdb3740"/>
 <approved hash="5,16,c9bc56596d6b0b60"/>
-<approved hash="5,16,e99db2e495d70e40"/>
 <approved hash="5,16,efbc705554673260"/>
+<approved hash="5,16,e99db2e495d70e40"/>
 <approved hash="5,16,139c48d122e2b941"/>
 <approved hash="5,16,15bd8a60e3528561"/>
+<approved hash="5,16,d70b27e395984b90"/>
+<approved hash="5,16,d777325280e54b20"/>
+<approved hash="5,16,475f91a41a933441"/>
 <approved hash="5,16,d77ae9a15baf4b94"/>
 <approved hash="5,16,d776ddc86fe24bbc"/>
 <approved hash="5,16,438e5e3bd5bd3071"/>
+<approved hash="5,16,47bdd873d241b461"/>
 <approved hash="5,16,d752f45e46f44b18"/>
 <approved hash="5,16,43584ba6c0922847"/>
 <approved hash="5,16,d47703ceb18148d8"/>
 <approved hash="5,16,43964131ccf73649"/>
-<approved hash="5,16,d70b27e395984b90"/>
 <approved hash="5,16,d7731bc4a9d34b84"/>
-<approved hash="5,16,7f89a43b2fbe3477"/>
 <approved hash="5,16,d7570cedbe864bdc"/>
-<approved hash="5,16,41b5bd75394c366b"/>
-<approved hash="5,16,d777325280e54b20"/>
-<approved hash="5,16,475f91a41a933441"/>
 <approved hash="5,16,41b7ab1e252937a9"/>
+<approved hash="5,16,7f89a43b2fbe3477"/>
+<approved hash="5,16,41b5bd75394c366b"/>
 <approved hash="5,16,419c1ac213f18841"/>
 <approved hash="5,16,a87741f1f3ba34dc"/>
 <approved hash="5,16,41bffb727b453661"/>
 <approved hash="5,16,4f8d8f4906e83633"/>
 <approved hash="5,16,41bc6d10eb2037a3"/>
-<approved hash="5,16,47bdd873d241b461"/>
 <approved hash="5,16,e3731a3734c0b284"/>
 <approved hash="5,16,e3570d1e2395b2dc"/>
-<approved hash="5,16,9c7740026ea9cddc"/>
 <approved hash="5,16,e37733a11df6b220"/>
+<approved hash="5,16,9c7740026ea9cddc"/>
 <approved hash="5,16,e30b2610088bb290"/>
-<approved hash="5,16,11bd8f8fc0bda761"/>
-<approved hash="5,16,e37ae852c6bcb294"/>
-<approved hash="5,16,e376dc3bf2f1b2bc"/>
-<approved hash="5,16,e077023d2c92b1d8"/>
 <approved hash="5,16,179c4d3e010d9b41"/>
+<approved hash="5,16,e37ae852c6bcb294"/>
+<approved hash="5,16,e077023d2c92b1d8"/>
+<approved hash="5,16,11bd8f8fc0bda761"/>
+<approved hash="5,16,e376dc3bf2f1b2bc"/>
 <approved hash="5,16,ff9c99e910588e42"/>
+<approved hash="5,16,0088a19333376a37"/>
 <approved hash="5,16,6b5a997cff0cf104"/>
+<approved hash="5,16,e88b499fca3b9334"/>
 <approved hash="5,16,5f9d398d983c0643"/>
 <approved hash="5,16,7b5a8989a679a884"/>
 </errors>
