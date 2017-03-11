@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -3825,7 +3825,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="IC1" gate="B" x="177.8" y="55.88" rot="MR0"/>
 <instance part="IC1" gate="C" x="195.58" y="109.22" rot="MR180"/>
 <instance part="IC1" gate="D" x="71.12" y="109.22" rot="MR180"/>
-<instance part="S1" gate="1" x="99.06" y="162.56" rot="MR0"/>
+<instance part="S1" gate="1" x="91.44" y="160.02" rot="MR180"/>
 </instances>
 <busses>
 </busses>
@@ -4028,14 +4028,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="22.86" y1="132.08" x2="60.96" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="132.08" x2="60.96" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="152.4" x2="60.96" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="160.02" x2="93.98" y2="160.02" width="0.1524" layer="91"/>
-<pinref part="S1" gate="1" pin="S"/>
-<wire x1="60.96" y1="160.02" x2="60.96" y2="170.18" width="0.1524" layer="91"/>
-<junction x="60.96" y="160.02"/>
 <junction x="60.96" y="170.18"/>
 <pinref part="J9" gate="G$1" pin="1"/>
+<wire x1="60.96" y1="160.02" x2="60.96" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="152.4" x2="63.5" y2="152.4" width="0.1524" layer="91"/>
 <junction x="60.96" y="152.4"/>
+<pinref part="S1" gate="1" pin="P"/>
+<wire x1="88.9" y1="160.02" x2="60.96" y2="160.02" width="0.1524" layer="91"/>
+<junction x="60.96" y="160.02"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -4175,11 +4175,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="60.96" y="109.22" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="9V" class="1">
+<net name="9V" class="0">
 <segment>
 <pinref part="G1" gate="G$1" pin="+"/>
-<pinref part="S1" gate="1" pin="P"/>
-<wire x1="111.76" y1="162.56" x2="101.6" y2="162.56" width="0.1524" layer="91"/>
+<pinref part="S1" gate="1" pin="S"/>
+<wire x1="111.76" y1="162.56" x2="96.52" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

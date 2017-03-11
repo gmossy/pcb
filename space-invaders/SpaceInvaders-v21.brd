@@ -1203,17 +1203,17 @@ design rules under a new name.</description>
 <wire x1="19.05" y1="19.05" x2="28.5" y2="19.05" width="0.254" layer="1"/>
 <wire x1="28.5" y1="19.05" x2="29.77" y2="20.32" width="0.254" layer="1"/>
 </signal>
-<signal name="9V" class="1">
+<signal name="VIN" class="1">
 <contactref element="U1" pad="IN"/>
 <contactref element="C2" pad="1"/>
 <wire x1="72.263" y1="49.53" x2="72.263" y2="54.483" width="0.3048" layer="1"/>
 <wire x1="73.66" y1="55.88" x2="72.263" y2="54.483" width="0.3048" layer="1"/>
-<contactref element="S3" pad="3"/>
-<wire x1="76.2" y1="86.36" x2="78.74" y2="86.36" width="0.3048" layer="1"/>
-<wire x1="78.74" y1="86.36" x2="82.55" y2="82.55" width="0.3048" layer="1"/>
-<wire x1="82.55" y1="82.55" x2="82.55" y2="68.58" width="0.3048" layer="1"/>
-<wire x1="82.55" y1="68.58" x2="73.66" y2="59.69" width="0.3048" layer="1"/>
-<wire x1="73.66" y1="59.69" x2="73.66" y2="55.88" width="0.3048" layer="1"/>
+<wire x1="73.66" y1="58.42" x2="73.66" y2="55.88" width="0.3048" layer="1"/>
+<contactref element="S3" pad="2"/>
+<wire x1="73.66" y1="86.36" x2="73.66" y2="80.01" width="0.3048" layer="1"/>
+<wire x1="73.66" y1="80.01" x2="80.01" y2="73.66" width="0.3048" layer="1"/>
+<wire x1="80.01" y1="73.66" x2="80.01" y2="64.77" width="0.3048" layer="1"/>
+<wire x1="80.01" y1="64.77" x2="73.66" y2="58.42" width="0.3048" layer="1"/>
 </signal>
 <signal name="GND" airwireshidden="yes">
 <contactref element="U1" pad="GND"/>
@@ -1532,13 +1532,11 @@ design rules under a new name.</description>
 <wire x1="1.905" y1="53.975" x2="3.81" y2="55.88" width="0.254" layer="1"/>
 <wire x1="3.81" y1="55.88" x2="6.35" y2="55.88" width="0.254" layer="1"/>
 </signal>
-<signal name="VIN" class="1">
+<signal name="9V" class="1">
 <contactref element="J7" pad="V+"/>
-<contactref element="S3" pad="2"/>
-<wire x1="73.66" y1="86.36" x2="73.66" y2="83.82" width="0.3048" layer="1"/>
-<wire x1="73.66" y1="83.82" x2="76.2" y2="81.28" width="0.3048" layer="1"/>
-<wire x1="76.2" y1="81.28" x2="79.502" y2="81.28" width="0.3048" layer="1"/>
-<wire x1="79.502" y1="81.28" x2="79.756" y2="81.026" width="0.3048" layer="1"/>
+<contactref element="S3" pad="3"/>
+<wire x1="79.756" y1="81.026" x2="79.756" y2="82.804" width="0.3048" layer="1"/>
+<wire x1="79.756" y1="82.804" x2="76.2" y2="86.36" width="0.3048" layer="1"/>
 </signal>
 </signals>
 <errors>
@@ -1830,34 +1828,34 @@ design rules under a new name.</description>
 <approved hash="5,16,d6be497657c431e2"/>
 <approved hash="5,16,289c72303e83a4c1"/>
 <approved hash="5,16,2ebdb081ff3398e1"/>
-<approved hash="5,1,e77732bc5b16741c"/>
 <approved hash="5,1,9877411f28490be0"/>
-<approved hash="5,1,1d8ddd9567345733"/>
+<approved hash="5,1,13bfa9ae1a995761"/>
 <approved hash="5,1,e70b270d4e6b74ac"/>
 <approved hash="5,1,e7731b2a722074b8"/>
 <approved hash="5,1,2d89f6e74e625577"/>
-<approved hash="5,1,155fc3787b4f5541"/>
-<approved hash="5,1,13bfa9ae1a995761"/>
-<approved hash="5,1,e752f4b09d077424"/>
 <approved hash="5,1,e77ae94f805c74a8"/>
+<approved hash="5,1,e776dd26b4117480"/>
+<approved hash="5,1,118e0ce7b4615171"/>
+<approved hash="5,1,e77732bc5b16741c"/>
+<approved hash="5,1,155fc3787b4f5541"/>
+<approved hash="5,1,1d8ddd9567345733"/>
+<approved hash="5,1,e752f4b09d077424"/>
 <approved hash="5,1,1158197aa14e4947"/>
 <approved hash="5,1,e47703206a7277e4"/>
 <approved hash="5,1,119613edad2b5749"/>
 <approved hash="5,1,e7570c03657574e0"/>
 <approved hash="5,1,13b7f9c244f556a9"/>
-<approved hash="5,1,e776dd26b4117480"/>
 <approved hash="5,1,13bc3fcc8afc56a3"/>
-<approved hash="5,1,118e0ce7b4615171"/>
 <approved hash="5,1,13b5efa95890576b"/>
-<approved hash="5,1,9776dd12bf24dbb8"/>
-<approved hash="5,1,97731b1e7915db80"/>
 <approved hash="5,1,970b2739455edb94"/>
-<approved hash="5,1,97570c376e40dbd8"/>
-<approved hash="5,1,947703146147d8dc"/>
+<approved hash="5,1,97731b1e7915db80"/>
 <approved hash="5,1,e877412b237ca4d8"/>
 <approved hash="5,1,977732885023db24"/>
-<approved hash="5,1,9752f4849632db1c"/>
+<approved hash="5,1,97570c376e40dbd8"/>
 <approved hash="5,1,977ae97b8b69db90"/>
+<approved hash="5,1,9776dd12bf24dbb8"/>
+<approved hash="5,1,9752f4849632db1c"/>
+<approved hash="5,1,947703146147d8dc"/>
 <approved hash="5,1,25bdba31df03b961"/>
 <approved hash="5,1,239c78801eb38541"/>
 <approved hash="5,1,17bd884dde7fb861"/>
@@ -1866,39 +1864,39 @@ design rules under a new name.</description>
 <approved hash="5,1,cf9d94e8acdb3740"/>
 <approved hash="5,1,efbc705554673260"/>
 <approved hash="5,1,e99db2e495d70e40"/>
-<approved hash="5,1,139c48d122e2b941"/>
 <approved hash="5,1,15bd8a60e3528561"/>
-<approved hash="5,1,d70b27e395984b90"/>
-<approved hash="5,1,d7731bc4a9d34b84"/>
-<approved hash="5,1,7f89a43b2fbe3477"/>
-<approved hash="5,1,d776ddc86fe24bbc"/>
-<approved hash="5,1,d77ae9a15baf4b94"/>
-<approved hash="5,1,438e5e3bd5bd3071"/>
-<approved hash="5,1,41bc6d10eb2037a3"/>
-<approved hash="5,1,d777325280e54b20"/>
-<approved hash="5,1,475f91a41a933441"/>
-<approved hash="5,1,a87741f1f3ba34dc"/>
-<approved hash="5,1,4f8d8f4906e83633"/>
-<approved hash="5,1,d7570cedbe864bdc"/>
-<approved hash="5,1,d47703ceb18148d8"/>
-<approved hash="5,1,41b5bd75394c366b"/>
+<approved hash="5,1,139c48d122e2b941"/>
 <approved hash="5,1,d752f45e46f44b18"/>
+<approved hash="5,1,d77ae9a15baf4b94"/>
 <approved hash="5,1,43584ba6c0922847"/>
-<approved hash="5,1,41b7ab1e252937a9"/>
-<approved hash="5,1,47bdd873d241b461"/>
+<approved hash="5,1,d776ddc86fe24bbc"/>
+<approved hash="5,1,41bc6d10eb2037a3"/>
+<approved hash="5,1,a87741f1f3ba34dc"/>
+<approved hash="5,1,d777325280e54b20"/>
+<approved hash="5,1,4f8d8f4906e83633"/>
+<approved hash="5,1,d47703ceb18148d8"/>
+<approved hash="5,1,43964131ccf73649"/>
+<approved hash="5,1,438e5e3bd5bd3071"/>
 <approved hash="5,1,419c1ac213f18841"/>
 <approved hash="5,1,41bffb727b453661"/>
-<approved hash="5,1,43964131ccf73649"/>
+<approved hash="5,1,d7731bc4a9d34b84"/>
+<approved hash="5,1,d70b27e395984b90"/>
+<approved hash="5,1,7f89a43b2fbe3477"/>
+<approved hash="5,1,d7570cedbe864bdc"/>
+<approved hash="5,1,41b7ab1e252937a9"/>
+<approved hash="5,1,47bdd873d241b461"/>
+<approved hash="5,1,41b5bd75394c366b"/>
+<approved hash="5,1,475f91a41a933441"/>
+<approved hash="5,1,9c7740026ea9cddc"/>
+<approved hash="5,1,e3570d1e2395b2dc"/>
 <approved hash="5,1,e077023d2c92b1d8"/>
+<approved hash="5,1,e3731a3734c0b284"/>
 <approved hash="5,1,e376dc3bf2f1b2bc"/>
 <approved hash="5,1,e37ae852c6bcb294"/>
-<approved hash="5,1,11bd8f8fc0bda761"/>
-<approved hash="5,1,e3570d1e2395b2dc"/>
 <approved hash="5,1,179c4d3e010d9b41"/>
-<approved hash="5,1,e3731a3734c0b284"/>
-<approved hash="5,1,9c7740026ea9cddc"/>
-<approved hash="5,1,e37733a11df6b220"/>
 <approved hash="5,1,e30b2610088bb290"/>
+<approved hash="5,1,e37733a11df6b220"/>
+<approved hash="5,1,11bd8f8fc0bda761"/>
 <approved hash="5,1,ff9c99e910588e42"/>
 <approved hash="5,1,0088a19333376a37"/>
 <approved hash="5,1,6b5a997cff0cf104"/>
