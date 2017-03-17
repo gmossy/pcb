@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.0.2">
+<eagle version="8.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -210,6 +210,10 @@
 <wire x1="66.04" y1="3.81" x2="62.23" y2="0" width="0.2032" layer="20" curve="-90"/>
 <wire x1="0" y1="3.81" x2="3.81" y2="0" width="0.2032" layer="20" curve="90"/>
 <wire x1="0" y1="52.07" x2="3.81" y2="55.88" width="0.2032" layer="20" curve="-90"/>
+<hole x="6.35" y="27.94" drill="2.54"/>
+<hole x="59.69" y="27.94" drill="2.54"/>
+<text x="7.62" y="29.21" size="1.4224" layer="21" font="vector" ratio="10">0.1"</text>
+<text x="59.69" y="29.21" size="1.4224" layer="21" font="vector" ratio="10" align="bottom-right">0.1"</text>
 </plain>
 <libraries>
 <library name="SparkFun-Capacitors">
@@ -1285,6 +1289,20 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <approved hash="5,16,6ec6b78d75795020"/>
 <approved hash="5,16,f9568946847c0c76"/>
 <approved hash="5,16,8d0b262830c38210"/>
+<approved hash="5,1,b50bdf1d99c9da23"/>
+<approved hash="5,1,534c571c84e684c9"/>
+<approved hash="5,1,234c2728e1d2e1c9"/>
+<approved hash="5,1,619712a7fa65754f"/>
+<approved hash="5,1,4cc29589728551dc"/>
+<approved hash="5,1,fd968f86b1443f4e"/>
+<approved hash="5,1,b50bde2bf0f78223"/>
+<approved hash="5,16,b50bdf1d99c9da23"/>
+<approved hash="5,16,534c571c84e684c9"/>
+<approved hash="5,16,234c2728e1d2e1c9"/>
+<approved hash="5,16,619712a7fa65754f"/>
+<approved hash="5,16,4cc29589728551dc"/>
+<approved hash="5,16,fd968f86b1443f4e"/>
+<approved hash="5,16,b50bde2bf0f78223"/>
 </errors>
 </board>
 </drawing>
