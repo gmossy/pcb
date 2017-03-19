@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.0.2">
+<eagle version="8.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -4465,11 +4465,7 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0.254" drill="0.508">
-<clearance class="0" value="0.254"/>
-</class>
-<class number="1" name="power" width="0.3048" drill="0.508">
-<clearance class="1" value="0.254"/>
+<class number="0" name="default" width="0.4064" drill="0">
 </class>
 </classes>
 <parts>
@@ -4479,8 +4475,8 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <part name="J6" library="SparkFun-Connectors" deviceset="CONN_08" device="&quot;" value="NOKIA_5110"/>
 <part name="LS1" library="SparkFun-Electromechanical" deviceset="BUZZER" device="-PTH" value="BUZZER"/>
 <part name="VR1" library="SparkFun-Resistors" deviceset="POTENTIOMETER_SLIDE" device="-30MM-1/10W-20%" value="10k"/>
-<part name="D1" library="SparkFun-LED" deviceset="LED" device="5MM" value="RED"/>
-<part name="D2" library="SparkFun-LED" deviceset="LED" device="5MM" value="YELLOW"/>
+<part name="D1" library="SparkFun-LED" deviceset="LED" device="5MM" value="RED_SPRITES"/>
+<part name="D2" library="SparkFun-LED" deviceset="LED" device="5MM" value="YELLOW_GUN"/>
 <part name="R1" library="SparkFun-Resistors" deviceset="10KOHM" device="-HORIZ-1/4W-5%" value="10k"/>
 <part name="R2" library="SparkFun-Resistors" deviceset="10KOHM" device="-HORIZ-1/4W-5%" value="10k"/>
 <part name="R3" library="SparkFun-Resistors" deviceset="1KOHM" device="-HORIZ-1/4W-5%" value="220"/>
@@ -4494,11 +4490,11 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <part name="R11" library="SparkFun-Resistors" deviceset="1KOHM" device="-HORIZ-1/4W-5%" value="12k"/>
 <part name="C1" library="SparkFun-Capacitors" deviceset="0.1UF" device="-KIT-EZ-50V-20%" value="0.1uF"/>
 <part name="C2" library="SparkFun-Capacitors" deviceset="0.1UF" device="-KIT-EZ-50V-20%" value="0.33uF"/>
-<part name="U1" library="SparkFun-IC-Power" deviceset="V_REG_78XX" device="-TO-220" value="LM7805CT"/>
+<part name="U1" library="SparkFun-IC-Power" deviceset="V_REG_78XX" device="SINK" value="LM7805CT"/>
 <part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-LETTER" device=""/>
 <part name="J7" library="SparkFun-Connectors" deviceset="BC9VPC" device="" value="9V"/>
-<part name="S1" library="SparkFun-Switches" deviceset="MOMENTARY-SWITCH-SPST" device="-PTH-6.0MM" value="SPECIAL"/>
-<part name="S2" library="SparkFun-Switches" deviceset="MOMENTARY-SWITCH-SPST" device="-PTH-6.0MM" value="REGULAR"/>
+<part name="S1" library="SparkFun-Switches" deviceset="MOMENTARY-SWITCH-SPST" device="-PTH-6.0MM" value="ONCE"/>
+<part name="S2" library="SparkFun-Switches" deviceset="MOMENTARY-SWITCH-SPST" device="-PTH-6.0MM" value="COMBO"/>
 <part name="S3" library="SparkFun-Switches" deviceset="SWITCH-SPDT" device="-PTH-11.6X4.0MM" value="POWER_SWITCH"/>
 </parts>
 <sheets>
@@ -4625,7 +4621,7 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <wire x1="38.1" y1="78.74" x2="30.48" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="VIN" class="1">
+<net name="VIN" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="IN"/>
 <pinref part="C2" gate="G$1" pin="1"/>
@@ -4695,7 +4691,7 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <label x="15.24" y="139.7" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="VBUS" class="1">
+<net name="VBUS" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="OUT"/>
 <pinref part="C1" gate="G$1" pin="2"/>
@@ -4835,7 +4831,7 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <wire x1="17.78" y1="139.7" x2="17.78" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="3.3V" class="1">
+<net name="3.3V" class="0">
 <segment>
 <pinref part="J3-J1" gate="G$1" pin="20"/>
 <label x="139.7" y="147.32" size="1.778" layer="95" font="vector" rot="R90"/>
@@ -5045,7 +5041,7 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <junction x="134.62" y="50.8"/>
 </segment>
 </net>
-<net name="9V" class="1">
+<net name="9V" class="0">
 <segment>
 <pinref part="J7" gate="G$1" pin="V+"/>
 <pinref part="S3" gate="1" pin="S"/>
