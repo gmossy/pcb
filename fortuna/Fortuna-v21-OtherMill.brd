@@ -690,33 +690,27 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <class number="0" name="default" width="0.4064" drill="0">
 </class>
 </classes>
-<designrules name="SparkFun">
-<description language="en">&lt;b&gt;SparkFun EAGLE Design Rules&lt;/b&gt;
-&lt;p&gt;
-The default Design Rules have been set to cover
-a wide range of applications. Your particular design
-may have different requirements, so please make the
-necessary adjustments and save your customized
-design rules under a new name.</description>
+<designrules name="OthermillDRC_1_32_v2">
+<description language="en">&lt;b&gt;Othermill EAGLE Design Rules v2&lt;/b&gt;&lt;p&gt;DRC for Othermill, 1/32&quot; tool&lt;/p&gt;&lt;b&gt;-- Rules --&lt;/b&gt;&lt;li&gt;8 mil traces&lt;/li&gt;&lt;li&gt;31.26mil clearance&lt;/li&gt;</description>
 <param name="layerSetup" value="(1*16)"/>
 <param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
 <param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
-<param name="mdWireWire" value="8mil"/>
-<param name="mdWirePad" value="8mil"/>
-<param name="mdWireVia" value="8mil"/>
-<param name="mdPadPad" value="8mil"/>
-<param name="mdPadVia" value="8mil"/>
-<param name="mdViaVia" value="8mil"/>
-<param name="mdSmdPad" value="8mil"/>
-<param name="mdSmdVia" value="8mil"/>
-<param name="mdSmdSmd" value="8mil"/>
+<param name="mdWireWire" value="0.794003125mm"/>
+<param name="mdWirePad" value="0.794003125mm"/>
+<param name="mdWireVia" value="0.794003125mm"/>
+<param name="mdPadPad" value="0.794003125mm"/>
+<param name="mdPadVia" value="0.794003125mm"/>
+<param name="mdViaVia" value="0.794003125mm"/>
+<param name="mdSmdPad" value="0mil"/>
+<param name="mdSmdVia" value="0mil"/>
+<param name="mdSmdSmd" value="0mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="10mil"/>
-<param name="mdDrill" value="8mil"/>
+<param name="mdCopperDimension" value="0mil"/>
+<param name="mdDrill" value="1mil"/>
 <param name="mdSmdStop" value="0mil"/>
 <param name="msWidth" value="8mil"/>
-<param name="msDrill" value="20mil"/>
+<param name="msDrill" value="0.8mm"/>
 <param name="msMicroVia" value="9.99mm"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.25"/>
@@ -726,15 +720,15 @@ design rules under a new name.</description>
 <param name="rvViaInner" value="0.25"/>
 <param name="rvMicroViaOuter" value="0.25"/>
 <param name="rvMicroViaInner" value="0.25"/>
-<param name="rlMinPadTop" value="12mil"/>
+<param name="rlMinPadTop" value="10mil"/>
 <param name="rlMaxPadTop" value="20mil"/>
 <param name="rlMinPadInner" value="10mil"/>
 <param name="rlMaxPadInner" value="20mil"/>
-<param name="rlMinPadBottom" value="12mil"/>
+<param name="rlMinPadBottom" value="10mil"/>
 <param name="rlMaxPadBottom" value="20mil"/>
 <param name="rlMinViaOuter" value="10mil"/>
 <param name="rlMaxViaOuter" value="20mil"/>
-<param name="rlMinViaInner" value="10mil"/>
+<param name="rlMinViaInner" value="8mil"/>
 <param name="rlMaxViaInner" value="20mil"/>
 <param name="rlMinMicroViaOuter" value="4mil"/>
 <param name="rlMaxMicroViaOuter" value="20mil"/>
@@ -743,18 +737,18 @@ design rules under a new name.</description>
 <param name="psTop" value="-1"/>
 <param name="psBottom" value="-1"/>
 <param name="psFirst" value="-1"/>
-<param name="psElongationLong" value="100"/>
+<param name="psElongationLong" value="50"/>
 <param name="psElongationOffset" value="100"/>
-<param name="mvStopFrame" value="1"/>
-<param name="mvCreamFrame" value="0"/>
-<param name="mlMinStopFrame" value="4mil"/>
-<param name="mlMaxStopFrame" value="4mil"/>
-<param name="mlMinCreamFrame" value="0mil"/>
-<param name="mlMaxCreamFrame" value="0mil"/>
-<param name="mlViaStopLimit" value="25mil"/>
-<param name="srRoundness" value="0"/>
-<param name="srMinRoundness" value="0mil"/>
-<param name="srMaxRoundness" value="0mil"/>
+<param name="mvStopFrame" value="0.05"/>
+<param name="mvCreamFrame" value="0.05"/>
+<param name="mlMinStopFrame" value="1mil"/>
+<param name="mlMaxStopFrame" value="2mil"/>
+<param name="mlMinCreamFrame" value="2mil"/>
+<param name="mlMaxCreamFrame" value="10mil"/>
+<param name="mlViaStopLimit" value="30mil"/>
+<param name="srRoundness" value="0.1"/>
+<param name="srMinRoundness" value="2mil"/>
+<param name="srMaxRoundness" value="10mil"/>
 <param name="slThermalIsolate" value="10mil"/>
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
@@ -1011,16 +1005,6 @@ design rules under a new name.</description>
 <contactref element="R6" pad="P$1"/>
 <contactref element="J2" pad="1"/>
 <polygon width="0.4064" layer="16" isolate="0.3048">
-<vertex x="0" y="3.81"/>
-<vertex x="0" y="52.07" curve="-90"/>
-<vertex x="3.81" y="55.88"/>
-<vertex x="62.23" y="55.88" curve="-90"/>
-<vertex x="66.04" y="52.07"/>
-<vertex x="66.04" y="3.81" curve="-90"/>
-<vertex x="62.23" y="0"/>
-<vertex x="3.81" y="0" curve="-90"/>
-</polygon>
-<polygon width="0.4064" layer="1" isolate="0.3048">
 <vertex x="0" y="3.81"/>
 <vertex x="0" y="52.07" curve="-90"/>
 <vertex x="3.81" y="55.88"/>
