@@ -3030,6 +3030,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SUPPLY6" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
 <part name="J2" library="SparkFun-Connectors" deviceset="RASPBERRYPI-40-PIN-GPIO" device="_PTH" value="RASPBERRY_PI_3_MODEL_B"/>
 <part name="B2" library="SparkFun-Boards" deviceset="SPARKFUN_LOGIC_LEVEL_CONVERTER" device="" value="LOGIC_LEVEL_CONVERTER"/>
+<part name="SUPPLY7" library="SparkFun-PowerSymbols" deviceset="5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3069,6 +3070,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="SUPPLY6" gate="G$1" x="78.74" y="93.98" rot="MR180"/>
 <instance part="J2" gate="G$1" x="73.66" y="25.4" rot="R90"/>
 <instance part="B2" gate="G$1" x="78.74" y="68.58" rot="R90"/>
+<instance part="SUPPLY7" gate="G$1" x="33.02" y="12.7"/>
 </instances>
 <busses>
 </busses>
@@ -3210,6 +3212,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="B2" gate="G$1" pin="HV"/>
 <wire x1="76.2" y1="93.98" x2="76.2" y2="83.82" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="SUPPLY7" gate="G$1" pin="5V"/>
+<wire x1="33.02" y1="12.7" x2="33.02" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="7.62" x2="48.26" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="5V@2"/>
+<wire x1="48.26" y1="7.62" x2="48.26" y2="10.16" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="7" class="0">
 <segment>
@@ -3261,10 +3270,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="B2" gate="G$1" pin="LV"/>
 <wire x1="76.2" y1="50.8" x2="76.2" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="45.72" x2="43.18" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="45.72" x2="43.18" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="7.62" x2="53.34" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="45.72" x2="43.18" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="2.54" x2="53.34" y2="2.54" width="0.1524" layer="91"/>
 <pinref part="J2" gate="G$1" pin="3.3V@1"/>
-<wire x1="53.34" y1="7.62" x2="53.34" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="2.54" x2="53.34" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SDA" class="0">
